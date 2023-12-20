@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/global-settings-schema.json",
+    "pacOwnerId": "bb65f9b8-034e-4ce4-a1db-6bc1d8d8a32c", 
+    "managedIdentityLocations": {
+        "*": "uksouth" 
+    },
+    "globalNotScopes": {
+        "*": [
+            "/resourceGroupPatterns/excluded-rg*"
+        ]
+    },
+    "pacEnvironments": [
+        {
+            "pacSelector": "quick-start",
+            "cloud": "AzureCloud",
+            "tenantId": "63a3715f-00d2-4a2f-a910-7b600e1b0bad", 
+            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/63a3715f-00d2-4a2f-a910-7b600e1b0bad"
+        }
+    ]
+}
